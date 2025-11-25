@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="PT-BR ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="terra.png" type="image/x-icon">
+<!--  Fonte- Manchete-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+<!-- Texto -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <title>Projeto Geo - GeoQuestiona </title>
+    <style>
+    
+:root {
+    --dp-bg: #0c0c0c;
+    --dp-bg2: #161616;
+    --dp-panel: #1d1d1d;
+    --dp-hover: #2a2a2a;
+    --dp-text: #e6e6e6;
+    --dp-muted: #9b9b9b;
+    --dp-primary: #bb86fc; 
+    --dp-primary-hover: #9d63f5;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(140deg, var(--dp-bg), var(--dp-bg2));
+    color: var(--dp-text);
+    font-family: "Inter", "Segoe UI", sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+
+
+
+
+
+
+a {
+    color: var(--dp-primary);
+    text-decoration: none;
+    transition: 0.2s;
+}
+a:hover {
+    color: var(--dp-primary-hover);
+}
+
+
+.card {
+    background: var(--dp-panel);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 40px #00000040;
+    color: white;
+
+    
+}
+
+.card:hover {
+    background: var(--dp-hover);
+    transform: translateY(-3px);
+}
+
+
+img {
+    border-radius: 12px;
+    box-shadow: 0 0 25px #00000055;
+    
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #2c2c2c;
+    margin: 30px 0;
+}
+
+
+.cabeçalho
+        {
+            background: #615b5b93;
+            height: 80px;
+            margin: 20px;
+            border-radius: 20px;
+            padding: 0.5rem;}
+
+.navbar a {
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.hero-section
+    {
+        background: url(tecnologia3.jpg) no-repeat center;
+        background-size: cover;
+        width:100%;
+        height:90vh;
+        position: relative;
+    }
+footer {
+    background: #0a0a0a;
+    color: var(--dp-muted);
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #2b2b2b;
+}
+
+
+.section {
+    padding: 40px 12%;
+}
+
+@media (max-width: 1200px) {
+
+    .hero-section {
+        height: 60vh;
+        background-position: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem !important;
+    }
+
+    
+    .cabeçalho {
+        margin: 10px !important;
+        height: auto !important;
+        padding: 0.7rem !important;
+        border-radius: 15px !important;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+
+   
+    img {
+        max-width: 100% !important;
+        float: none !important;
+        margin: 20px auto !important;
+        display: block;
+    }
+
+    
+    p {
+        max-width: 100% !important;
+        font-size: 1.05rem !important;
+        text-align: center !important;
+    }
+
+    h2, h3 {
+        text-align: center !important;
+    }
+
+    
+    .card {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+   
+    .container,
+    .d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+  
+    body {
+        padding: 0 10px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top cabeçalho">
+  <div class="container-fluid">
+    <a class="navbar-brand me-auto" href="#">GeoQuestiona</a>
+    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header cabeçalho text-center">
+        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pe-4">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          
+          <li class="nav-item">
+            <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Início</a>
+          </li>
+
+           <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="contato.html" target="_blank">Contato</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="conteudo.html" target="_blank">Conteúdo</a>
+          </li>
+
+          <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="FAQ.html" target="_blank">FAQ</a>
+          </li>
+
+          <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="sobre.html" target="_blank">Sobre</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section d-flex justify-content-center align-items-center text-white fs-1 flex-column ">
+
+    <h1 class="display-4 fw-bold text-light mb-2">GeoQuestiona</h1>
+    <p class="lead texto">Explorando o mundo da geografia e tecnologia</p>
+  
+</section>
+
+<hr>
+<div class="container p-2">
+<h1 class="px-3 headline text-center  mt-4 "> Monitoramento de Desastres Naturais</h1>
+<hr>
+  <h2 class="px-3 headline text-center  mt-4 ">Boas vindas ao GeoQuestiona</h2>
+<hr>
+<img src="bemvindo_blog1.png" style="float: right; margin-right: 35px; max-width: 600px; " >
+
+<p class="texto fs-4 px-3 pb-2" style="max-width: 600px; margin-left: 25px;"  >Aqui você encontrará uma variedade de conteúdos relacionados à geografia e tecnologia. <br> Nosso objetivo é fornecer informações atualizadas, análises detalhadas e recursos úteis <br> para entusiastas e profissionais da área. 
+</p>
+</div>
+ 
+  
+
+              <br>
+              
+
+<hr>
+
+  <h3 class="text-center headline mb-3">Links de navegação</h3>
+
+  <div class="d-flex align-items-space-between text-center justify-content-center flex-wrap mb-2 pb-4 ">
+    
+   <div class="d-flex align-items-space-between text-center justify-content-center flex-wrap mb-4 pb-4 ">
+    
+ 
+<div class="card  me-lg-4" style="width: 18rem;">
+  <img src="mapa.jpeg" class="card-img-top" alt="...">
+  <div class="card-body text-white">
+    <h5 class="card-title ">Importancia do Monitoramento </h5>
+    <p class="card-text">Veja nossa página de Importância do Monitoramento </p>
+       <a href="conteudo.html#imp" class=" stretched-link" target="_blank"></a>
+  </div>
+</div>
+
+</div>
+
+ <div class="d-flex align-items-space-between text-center justify-content-center flex-wrap mb-4 pb-4 ">
+    
+  <div class="card  me-lg-4  " style="width: 18rem;">
+  <img src="monitoramento.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Método de Monitoramento</h5>
+    <p class="card-text">Veja a nossa página de Métodos de Monitoramento.</p>
+   <a href="conteudo.html#met" class=" stretched-link" target="_blank"></a>
+  </div>
+</div>
+
+
+<br>
+
+
+<div class="card text-white" style="width: 18rem; ">
+  <img src="robo.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Saiba Mais</h5>
+    <p class="card-text">Veja as fontes usadas na produção textual deste trabalho.</p>
+       <a href="conteudo.html#sai" class=" stretched-link" target="_blank"></a>
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="text-center rodape">
+   <p class="mb-1">© 2025 GeoQuestiona</p>
+   <p class="small">Desenvolvido por estudantes de Geografia – USP</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+</script>
+
+</body>
+</html>
